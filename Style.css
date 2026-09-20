@@ -123,3 +123,51 @@
         font-size: 22px;
     }
 }
+/* Animated Icon Navbar */
+
+.icon-navbar {
+    background-color: #000 !important;
+    padding: 12px 0;
+}
+
+.icon-navbar .navbar-brand {
+    color: white;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.icon-navbar .navbar-brand:hover {
+    color: #aaa;
+    transform: scale(1.2);
+}
+
+.icon-link {
+    color: white !important;
+    font-size: 24px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover animation */
+.icon-link:hover {
+    color: #aaa !important;
+    transform: translateY(-5px) scale(1.15);
+}
+
+/* Small animated line underneath */
+.icon-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.icon-link:hover::after {
+    width: 20px;
+}
