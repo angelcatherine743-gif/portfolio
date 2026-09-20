@@ -1,0 +1,125 @@
+/* =========================
+   ANIMATED NAVBAR
+   ========================= */
+
+.navbar {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 55px;
+    color: #555;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.navbar .icon,
+.navbar .activeIcon {
+    position: absolute;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.navbar .activeIcon {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.navbar span {
+    position: absolute;
+    bottom: -22px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.navbar li:hover a {
+    color: #6c2bd9;
+    transform: translateY(-5px);
+}
+
+.navbar li:hover .icon {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.navbar li:hover .activeIcon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.navbar li:hover span {
+    opacity: 1;
+}
+
+.navbar li.active a {
+    color: #6c2bd9;
+}
+
+.navbar li.active .icon {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.navbar li.active .activeIcon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.navbar li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 35px;
+    height: 5px;
+    background: #6c2bd9;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+
+    .navbar ul {
+        gap: 3px;
+    }
+
+    .navbar li a {
+        width: 60px;
+        height: 50px;
+    }
+
+    .navbar .icon,
+    .navbar .activeIcon {
+        font-size: 22px;
+    }
+}
