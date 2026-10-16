@@ -186,3 +186,72 @@ h1, h2, h3, h4, h5, h6,
 .icon-link:hover::after {
     width: 20px;
 }
+/* =========================
+   DARK THEME (orchid)
+   ========================= */
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero h1,
+.card-title,
+.navbar-brand {
+    color: #C084FC;
+}
+
+p, li, label, .lead, .hero .lead {
+    color: #fff;
+}
+
+.card {
+    background: #0d0d10;
+    color: #fff;
+    border: 1px solid #2a2a33;
+}
+
+.project-card:hover {
+    box-shadow: 0 10px 24px rgba(192, 132, 252, 0.25);
+}
+
+a {
+    color: #C084FC;
+}
+
+.form-control {
+    background: #0d0d10;
+    color: #fff;
+    border: 1px solid #2a2a33;
+}
+
+.form-control::placeholder {
+    color: #9a9aa5;
+}
+
+.form-control:focus {
+    background: #0d0d10;
+    color: #fff;
+    border-color: #C084FC;
+    box-shadow: 0 0 0 0.2rem rgba(192, 132, 252, 0.25);
+}
+
+.btn-dark {
+    background: #C084FC;
+    border-color: #C084FC;
+    color: #000;
+}
+
+.btn-dark:hover {
+    background: #d4a5ff;
+    border-color: #d4a5ff;
+    color: #000;
+}
+
+/* Doodles: make dark outlines visible on black (only matters once you add them) */
+.doodle [stroke="#222"] { stroke: #f1eeff; }
+.doodle [fill="#222"]   { fill: #f1eeff; }
+.doodle [fill="#fff"]   { fill: #0d0d10; }
+.doodle [stroke="#6c2bd9"] { stroke: #C084FC; }
+.doodle [fill="#6c2bd9"]   { fill: #C084FC; }
