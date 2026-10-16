@@ -1,7 +1,22 @@
 /* =========================
    ANIMATED NAVBAR
    ========================= */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.card-title {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+}
+
+.btn {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    border-radius: 12px;
+}
 .navbar {
     width: fit-content;
     margin: 20px auto;
